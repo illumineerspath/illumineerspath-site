@@ -2,73 +2,167 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lorcana Reign of Jafar Spoilers</title>
-  <link rel="stylesheet" href="spoilerStyle.css" />
-  <link rel="icon" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Illumineers Path</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
-  <div class="background-wrapper">
-    <div class="background-image-layer"></div>
+    <div class="background-wrapper">
+        <div class="background-image-layer"></div>
+        <div class="twinkle-overlay" id="twinkleOverlay"></div>
 
-    <header class="navbar">
-      <h1>
-        <a href="home.html" class="logo-link">
-          <img src="Icon.png" alt="Site Icon" class="site-logo" />
-          <img src="Header1_alt.png" alt="Illumineers Path Logo" class="site-logo" />
-        </a>
-      </h1>
-      <button class="nav-toggle" id="navToggle">&#9776;</button>
-      <nav>
-        <a href="meta-decks.html">Meta Decks</a>
-        <a href="budget-decks.html">Budget Decks</a>
-        <a href="deck-building.html">Deckbuilding</a>
-        <a href="about.html">About</a>
-        <a href="index.html">Spoilers</a>
-        <a href="rotation.html">Rotation</a>
-      </nav>
-    </header>
+        <header class="navbar">
+            <h1>
+                <a href="index.html">
+                    <img src="Icon.png" alt="Site Icon" class="site-logo">
+                    <img src="Header1_alt.png" alt="Illumineers Path Logo" class="site-logo">
+                </a>
+            </h1>
+            <button class="nav-toggle" id="navToggle">&#9776;</button>
+            <nav>
+                <a href="meta-decks.html">Meta Decks</a>
+                <a href="budget-decks.html">Budget Decks</a>
+                <a href="deck-building.html">Deckbuilding</a>
+                <a href="about.html">About</a>
+                <a href="spoilers.html">Spoilers</a>
+                <a href="rotation.html">Rotation</a>
+            </nav>
+        </header>
 
-    <main>
-      <button id="toggleRevealed">Show Missing Card Slots</button>
-      <div id="loading">Loading cards...</div>
-      <div class="card-grid" id="cardGrid"></div>
-      <div id="overlay"></div>
+        <div class="hero-image">
+            <div class="hero-text">
+                <img src="Logo.png">
+                <h2>Welcome, Illumineers! Wherever you are on your path through Lorcana,<br> we’re excited to walk it
+                    with you!</h2>
+                <button id="scrollBtn" class="scroll-button">▼ Explore</button>
+            </div>
+        </div>
 
-      <div class="zoom-controls">
-        <button id="prevBtn" class="nav-button">‹</button>
-        <button id="nextBtn" class="nav-button">›</button>
-      </div>
+        <main class="card-grid">
+            <a href="meta-decks.html" class="card-link">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="images/S7_Social_Post_Iago_1080x1080.png" alt="Meta Decks">
+                        <h2>Meta Decks</h2>
+                        <p>Top-tier strategies and tournament-ready decks for competitive play.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="budget-decks.html" class="card-link">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="images/S7_Social_Post_Belle_1080x1080.png" alt="Budget Decks">
+                        <h2>Budget Decks</h2>
+                        <p>Build strong decks on a budget, perfect for new and casual players.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="deck-building.html" class="card-link">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="images/S7_Social_Post_Bolt_1080x1080.png" alt="Deckbuilding">
+                        <h2>Deckbuilding Tips</h2>
+                        <p>Learn to build powerful and synergistic decks from scratch.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="index.html" class="card-link">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="images/Spoilers.png" alt="Spoilers for Set 9">
+                        <h2>Spoilers</h2>
+                        <p>Check out all the revealed cards for the Reign of Jafar.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="rotation.html" class="card-link">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="images/GoofyMovie.png" alt="Rotation">
+                        <h2>Rotation</h2>
+                        <p>Learn about how rotation works and what that will mean for you.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="about.html" class="card-link">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="images/S7_Social_Post_MadHatter_1080x1080.png" alt="About IllumineersPath">
+                        <h2>About</h2>
+                        <p>Learn about Illumineers Path and our goal to help players grow.</p>
+                    </div>
+                </div>
+            </a>
+        </main>
 
-      <h2>Enchanted Cards</h2>
-      <div class="card-grid" id="bonusGrid"></div>
-    </main>
+        <footer>
+            <p>&copy; 2025 IllumineersPath.com</p>
+            <p>This website uses trademarks and/or copyrights associated with Disney Lorcana TCG, used under
+                <a href="https://cdn.ravensburger.com/lorcana/community-code-en">Ravensburger’s Community Code Policy</a>. This website is not published, endorsed, or specifically approved
+                by Disney or Ravensburger.<br> For more information about Disney Lorcana TCG, visit <a href="https://www.disneylorcana.com/">https://www.disneylorcana.com/.</a>
+            </p>
+        </footer>
+    </div>
 
-    <footer>
-      <p>&copy; 2025 IllumineersPath.com</p>
-      <p>This website uses trademarks and/or copyrights associated with Disney Lorcana TCG, used under
-        <a href="https://cdn.ravensburger.com/lorcana/community-code-en">Ravensburger’s Community Code Policy</a>. This website is not published, endorsed, or specifically approved
-        by Disney or Ravensburger. For more information about Disney Lorcana TCG, visit
-        <a href="https://www.disneylorcana.com/">disneylorcana.com</a>.
-      </p>
-    </footer>
-  </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggle = document.getElementById("navToggle");
+            const nav = document.querySelector(".navbar nav");
+            const body = document.body;
 
-  <script src="script.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const toggle = document.getElementById("navToggle");
-      const nav = document.querySelector(".navbar nav");
-      const body = document.body;
+            toggle.addEventListener("click", () => {
+                nav.classList.toggle("show");
+                body.classList.toggle("no-scroll");
+            });
 
-      toggle.addEventListener("click", () => {
-        nav.classList.toggle("show");
-        body.classList.toggle("no-scroll");
-      });
-    });
-  </script>
+            const scrollBtn = document.getElementById("scrollBtn");
+            if (scrollBtn) {
+                scrollBtn.addEventListener("click", () => {
+                    document.querySelector(".card-grid").scrollIntoView({ behavior: "smooth" });
+                });
+            }
+
+            const cardGrid = document.querySelector(".card-grid");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        cardGrid.classList.add("visible");
+                        observer.unobserve(cardGrid);
+                    }
+                });
+            }, { threshold: 0.6 });
+
+            if (cardGrid) observer.observe(cardGrid);
+
+            const overlay = document.getElementById('twinkleOverlay');
+            const count = 120;
+
+            for (let i = 0; i < count; i++) {
+                const twinkle = document.createElement('div');
+                twinkle.classList.add('twinkle');
+                if (Math.random() < 0.4) twinkle.classList.add('gold');
+                if (Math.random() < 0.3) twinkle.classList.add('pulse');
+                if (Math.random() < 0.2) twinkle.classList.add('orbit');
+
+                const favorTopRight = Math.random() < 0.6;
+                if (favorTopRight) {
+                    twinkle.style.top = `${Math.random() * 40}%`;
+                    twinkle.style.left = `${60 + Math.random() * 40}%`;
+                } else {
+                    twinkle.style.top = `${Math.random() * 100}%`;
+                    twinkle.style.left = `${Math.random() * 100}%`;
+                }
+
+                twinkle.style.animationDelay = `${Math.random() * 5}s`;
+                overlay.appendChild(twinkle);
+            }
+        });
+    </script>
 </body>
 
 </html>

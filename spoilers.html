@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lorcana Reign of Jafar Spoilers</title>
+  <link rel="stylesheet" href="spoilerStyle.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+  <div class="background-wrapper">
+    <div class="background-image-layer"></div>
+
+    <header class="navbar">
+      <h1>
+        <a href="index.html" class="logo-link">
+          <img src="Icon.png" alt="Site Icon" class="site-logo" />
+          <img src="Header1_alt.png" alt="Illumineers Path Logo" class="site-logo" />
+        </a>
+      </h1>
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+      <nav>
+        <a href="meta-decks.html">Meta Decks</a>
+        <a href="budget-decks.html">Budget Decks</a>
+        <a href="deck-building.html">Deckbuilding</a>
+        <a href="about.html">About</a>
+        <a href="spoilers.html">Spoilers</a>
+        <a href="rotation.html">Rotation</a>
+      </nav>
+    </header>
+
+    <main>
+      <button id="toggleRevealed">Show Missing Card Slots</button>
+      <div id="loading">Loading cards...</div>
+      <div class="card-grid" id="cardGrid"></div>
+      <div id="overlay"></div>
+
+      <div class="zoom-controls">
+        <button id="prevBtn" class="nav-button">‹</button>
+        <button id="nextBtn" class="nav-button">›</button>
+      </div>
+
+      <h2>Enchanted Cards</h2>
+      <div class="card-grid" id="bonusGrid"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 IllumineersPath.com</p>
+      <p>This website uses trademarks and/or copyrights associated with Disney Lorcana TCG, used under
+        <a href="https://cdn.ravensburger.com/lorcana/community-code-en">Ravensburger’s Community Code Policy</a>. This website is not published, endorsed, or specifically approved
+        by Disney or Ravensburger. For more information about Disney Lorcana TCG, visit
+        <a href="https://www.disneylorcana.com/">disneylorcana.com</a>.
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("navToggle");
+      const nav = document.querySelector(".navbar nav");
+      const body = document.body;
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("show");
+        body.classList.toggle("no-scroll");
+      });
+    });
+  </script>
+</body>
+
+</html>
