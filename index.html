@@ -103,8 +103,10 @@
         <footer>
             <p>&copy; 2025 IllumineersPath.com</p>
             <p>This website uses trademarks and/or copyrights associated with Disney Lorcana TCG, used under
-                <a href="https://cdn.ravensburger.com/lorcana/community-code-en">Ravensburger’s Community Code Policy</a>. This website is not published, endorsed, or specifically approved
-                by Disney or Ravensburger.<br> For more information about Disney Lorcana TCG, visit <a href="https://www.disneylorcana.com/">https://www.disneylorcana.com/.</a>
+                <a href="https://cdn.ravensburger.com/lorcana/community-code-en">Ravensburger’s Community Code
+                    Policy</a>. This website is not published, endorsed, or specifically approved
+                by Disney or Ravensburger.<br> For more information about Disney Lorcana TCG, visit <a
+                    href="https://www.disneylorcana.com/">https://www.disneylorcana.com/.</a>
             </p>
         </footer>
     </div>
@@ -162,6 +164,17 @@
                 overlay.appendChild(twinkle);
             }
         });
+
+        function updateNavHeightCSSVar() {
+            const nav = document.querySelector('.navbar');
+            if (nav) {
+                const height = nav.offsetHeight;
+                document.documentElement.style.setProperty('--nav-height', `${height}px`);
+            }
+        }
+
+        window.addEventListener('load', updateNavHeightCSSVar);
+        window.addEventListener('resize', updateNavHeightCSSVar);
     </script>
 </body>
 

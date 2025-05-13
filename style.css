@@ -1,4 +1,10 @@
 /* === GLOBAL STYLES === */
+:root {
+  --nav-height: 75px;
+  /* fallback if JS hasn't run yet */
+}
+
+
 html,
 body {
   margin: 0;
@@ -11,7 +17,7 @@ body {
 .background-wrapper {
   position: relative;
   min-height: 100dvh;
-  background-color: #000;
+  background-color: #1d1c17;
   display: flex;
   flex-direction: column;
   z-index: 0;
@@ -32,8 +38,6 @@ body {
   z-index: 0;
   pointer-events: none;
 }
-
-
 
 .navbar {
   position: fixed;
@@ -131,7 +135,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin-bottom: 6rem; /* adjust as needed to hide first card */
+  margin-bottom: 6rem;
+  /* adjust as needed to hide first card */
 }
 
 .hero-text {
@@ -290,6 +295,8 @@ footer a {
   .hero-image {
     padding-top: 140px;
     height: 100dvh;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .hero-text {
@@ -366,9 +373,13 @@ footer a {
 
 @media (max-width: 768px) {
 
-.background-image-layer {
-  background-position: 82% 0%;
-}
+  .background-image-layer {
+    background-image: url("images/Path and Star Mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: var(--nav-height);
+  }
+
 
 
   .hero-image {
