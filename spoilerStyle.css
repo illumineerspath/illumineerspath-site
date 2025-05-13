@@ -168,7 +168,7 @@ body.no-scroll {
   right: 0;
   bottom: 0;
   z-index: 9998;
-  background: transparent;
+  background: rgba(0, 0, 0, 1);
   display: none;
 }
 

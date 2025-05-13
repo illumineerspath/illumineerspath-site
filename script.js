@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // === Mobile Navbar Toggle Only ===
   const toggle = document.getElementById("navToggle");
   const nav = document.querySelector(".navbar nav");
   const body = document.body;
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // === Core Elements
   const grid = document.getElementById("cardGrid");
   const bonusGrid = document.getElementById("bonusGrid");
   const toggleBtn = document.getElementById("toggleRevealed");
@@ -23,19 +21,21 @@ document.addEventListener("DOMContentLoaded", () => {
   let showMissing = false;
   let zoomedClone = null;
   let cacheBuster = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
-  let revealedCards = [];
+  let manifest = { revealed: {}, bonus: [] };
+  const totalCards = 204;
+
+  let mainRevealedCards = [];
+  let bonusRevealedCards = [];
+  let currentZoomList = [];
   let currentZoomIndex = -1;
   let lastZoomTime = 0;
   const zoomCooldown = 200;
   let savedScrollY = 0;
-  let manifest = { revealed: {}, bonus: [] };
-  const totalCards = 204;
 
   const CHUNK_SIZE = 20;
   let currentChunkIndex = 0;
   let isLoadingChunk = false;
 
-  // === Refresh Button
   const refreshBtn = document.createElement("button");
   refreshBtn.textContent = "Refresh Card Images";
   refreshBtn.id = "refreshImagesBtn";
@@ -48,18 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   document.querySelector("main").insertBefore(refreshBtn, grid);
 
-  // === Zoom Touch Support
-  function preventTouchScroll(e) {
-    e.preventDefault();
-  }
-
+  function preventTouchScroll(e) { e.preventDefault(); }
   let touchStartX = 0;
   let touchEndX = 0;
-
-  function handleTouchStart(e) {
-    touchStartX = e.changedTouches[0].screenX;
-  }
-
+  function handleTouchStart(e) { touchStartX = e.changedTouches[0].screenX; }
   function handleTouchEnd(e) {
     touchEndX = e.changedTouches[0].screenX;
     const diff = touchEndX - touchStartX;
@@ -69,12 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // === Zoom Logic
   function showZoomNavigation() {
     prevBtn.style.display = "flex";
     nextBtn.style.display = "flex";
     prevBtn.style.opacity = currentZoomIndex > 0 ? "1" : "0.3";
-    nextBtn.style.opacity = currentZoomIndex < revealedCards.length - 1 ? "1" : "0.3";
+    nextBtn.style.opacity = currentZoomIndex < currentZoomList.length - 1 ? "1" : "0.3";
   }
 
   function hideZoomNavigation() {
@@ -83,15 +74,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function zoomToCard(index) {
+    if (
+      currentZoomList === mainRevealedCards &&
+      index >= mainRevealedCards.length - 2 &&
+      currentChunkIndex * CHUNK_SIZE < totalCards
+    ) {
+      loadNextChunk();
+    }
+
+
     if (Date.now() - lastZoomTime < zoomCooldown) return;
     lastZoomTime = Date.now();
-    if (index < 0 || index >= revealedCards.length) return;
+    if (index < 0 || index >= currentZoomList.length) return;
     if (zoomedClone && currentZoomIndex === index) return;
 
     savedScrollY = window.scrollY;
     closeZoom();
 
-    const img = revealedCards[index].querySelector(".card");
+    const entry = currentZoomList[index];
+    const img = entry.container.querySelector(".card");
     if (!img) return;
 
     zoomedClone = img.cloneNode(true);
@@ -133,7 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
     hideZoomNavigation();
   }
 
-  // === Card Creation
   function createCard(cardNum) {
     const img = document.createElement("img");
     img.dataset.cardNum = cardNum;
@@ -143,6 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const container = document.createElement("div");
     container.classList.add("card-container");
+    container.dataset.cardId = cardNum;
     container.appendChild(img);
 
     const label = document.createElement("div");
@@ -157,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isRevealed) container.dataset.missing = "true";
 
     if (isRevealed) {
-      revealedCards.push(container);
+      mainRevealedCards.push({ id: cardNum, container });
       const path = quality === "low"
         ? `cards/Set_8/lowres/${cardNum}.png?v=${cacheBuster}`
         : `cards/Set_8/${cardNum}.png?v=${cacheBuster}`;
@@ -168,23 +169,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     img.addEventListener("click", (e) => {
       e.stopPropagation();
-      const index = revealedCards.findIndex(c => c.contains(img));
-      if (index !== -1) zoomToCard(index);
+      const index = mainRevealedCards.findIndex(entry => entry.container.contains(img));
+      if (index !== -1) {
+        currentZoomList = mainRevealedCards;
+        zoomToCard(index);
+      }
     });
 
     return container;
   }
 
   function createBonusCard(bonusNum) {
-    const filename = `bonus_${bonusNum}.png`;
     const img = document.createElement("img");
     img.loading = "lazy";
-    img.src = `cards/Set_8/bonus/${filename}?v=${cacheBuster}`;
+    img.src = `cards/Set_8/bonus/bonus_${bonusNum}.png?v=${cacheBuster}`;
     img.alt = `Bonus Card ${bonusNum}`;
     img.classList.add("card");
 
     const container = document.createElement("div");
     container.classList.add("card-container");
+    container.dataset.cardId = `bonus-${bonusNum}`;
     container.appendChild(img);
 
     const label = document.createElement("div");
@@ -195,14 +199,16 @@ document.addEventListener("DOMContentLoaded", () => {
     img.onerror = () => container.remove();
     img.addEventListener("click", (e) => {
       e.stopPropagation();
-      const index = revealedCards.findIndex(c => c.contains(img));
-      if (index !== -1) zoomToCard(index);
+      const index = bonusRevealedCards.findIndex(entry => entry.container.contains(img));
+      if (index !== -1) {
+        currentZoomList = bonusRevealedCards;
+        zoomToCard(index);
+      }
     });
 
     return container;
   }
 
-  // === Lazy Loading
   function loadNextChunk() {
     if (isLoadingChunk) return;
     isLoadingChunk = true;
@@ -256,7 +262,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function loadFromManifest() {
     grid.innerHTML = "";
-    revealedCards = [];
+    mainRevealedCards = [];
     currentChunkIndex = 0;
     isLoadingChunk = false;
     loadingIndicator.classList.remove("hidden");
@@ -268,7 +274,6 @@ document.addEventListener("DOMContentLoaded", () => {
     grid.appendChild(sentinel);
     setupIntersectionObserver();
 
-    loadBonusCards();
     window.addEventListener("scroll", handleScrollLoad);
   }
 
@@ -276,20 +281,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollY = window.scrollY || window.pageYOffset;
     const viewportHeight = window.innerHeight;
     const fullHeight = document.documentElement.scrollHeight;
-
     if (scrollY + viewportHeight >= fullHeight - 300) loadNextChunk();
   }
 
   function loadBonusCards() {
     bonusGrid.innerHTML = "";
+    bonusRevealedCards = [];
+
     manifest.bonus.forEach(bonusNum => {
       const container = createBonusCard(bonusNum);
       bonusGrid.appendChild(container);
-      revealedCards.push(container);
+      bonusRevealedCards.push({ id: `bonus-${bonusNum}`, container });
     });
   }
 
-  // === Reveal Toggle
   function toggleMissing() {
     showMissing = !showMissing;
     toggleBtn.textContent = showMissing ? "Hide Missing Card Slots" : "Show Missing Card Slots";
