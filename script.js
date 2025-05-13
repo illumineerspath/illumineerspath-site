@@ -1,4 +1,3 @@
-// Full updated script with swipe support and faded navigation buttons
 const grid = document.getElementById("cardGrid");
 const bonusGrid = document.getElementById("bonusGrid");
 const toggleBtn = document.getElementById("toggleRevealed");
@@ -15,12 +14,11 @@ let revealedCards = [];
 let currentZoomIndex = -1;
 let lastZoomTime = 0;
 const zoomCooldown = 200;
-
-let manifest = { revealed: [], bonus: [] };
+let savedScrollY = 0;
+let manifest = { revealed: {}, bonus: [] };
 const totalCards = 204;
-let touchStartX = 0;
-let touchEndX = 0;
 
+// Add refresh button
 const refreshBtn = document.createElement("button");
 refreshBtn.textContent = "Refresh Card Images";
 refreshBtn.id = "refreshImagesBtn";
@@ -29,14 +27,17 @@ refreshBtn.style.cssText = "background-color:#771517;color:#fff;border:2px solid
 refreshBtn.addEventListener("click", () => {
   cacheBuster = Date.now();
   loadFromManifest();
+  loadBonusCards();
 });
 document.querySelector("main").insertBefore(refreshBtn, grid);
 
-
-
+// Touch scroll prevention
 function preventTouchScroll(e) {
   e.preventDefault();
 }
+
+let touchStartX = 0;
+let touchEndX = 0;
 
 function handleTouchStart(e) {
   touchStartX = e.changedTouches[0].screenX;
@@ -46,18 +47,14 @@ function handleTouchEnd(e) {
   touchEndX = e.changedTouches[0].screenX;
   const diff = touchEndX - touchStartX;
   if (Math.abs(diff) > 50) {
-    if (diff < 0) {
-      zoomToCard(currentZoomIndex + 1);
-    } else {
-      zoomToCard(currentZoomIndex - 1);
-    }
+    if (diff < 0) zoomToCard(currentZoomIndex + 1);
+    else zoomToCard(currentZoomIndex - 1);
   }
 }
 
 function showZoomNavigation() {
   prevBtn.style.display = "flex";
   nextBtn.style.display = "flex";
-
   prevBtn.style.opacity = currentZoomIndex > 0 ? "1" : "0.3";
   nextBtn.style.opacity = currentZoomIndex < revealedCards.length - 1 ? "1" : "0.3";
 }
@@ -67,21 +64,18 @@ function hideZoomNavigation() {
   nextBtn.style.display = "none";
 }
 
-let savedScrollY = 0;
-
 function zoomToCard(index) {
-  const now = Date.now();
-  if (now - lastZoomTime < zoomCooldown) return;
-  lastZoomTime = now;
+  if (Date.now() - lastZoomTime < zoomCooldown) return;
+  lastZoomTime = Date.now();
   if (index < 0 || index >= revealedCards.length) return;
-
-  // Prevent zooming the same card twice
   if (zoomedClone && currentZoomIndex === index) return;
 
   savedScrollY = window.scrollY;
   closeZoom();
 
   const img = revealedCards[index].querySelector(".card");
+  if (!img) return;
+
   zoomedClone = img.cloneNode(true);
   zoomedClone.classList.add("zoomed");
 
@@ -96,7 +90,6 @@ function zoomToCard(index) {
 
   document.body.classList.add("no-scroll", "show-controls");
 
-  // Swipe support for both overlay and zoomed image
   overlay.addEventListener("touchmove", preventTouchScroll, { passive: false });
   overlay.addEventListener("touchstart", handleTouchStart, { passive: false });
   overlay.addEventListener("touchend", handleTouchEnd, { passive: false });
@@ -108,25 +101,17 @@ function zoomToCard(index) {
   showZoomNavigation();
 }
 
-
-
-
-
 function closeZoom() {
   if (zoomedClone) {
     zoomedClone.remove();
     zoomedClone = null;
   }
-
   document.body.classList.remove("no-scroll", "show-controls");
   overlay.style.display = "none";
   overlay.removeEventListener("touchmove", preventTouchScroll);
   overlay.removeEventListener("touchstart", handleTouchStart);
   overlay.removeEventListener("touchend", handleTouchEnd);
-
-  // Restore scroll position (make sure savedScrollY is declared globally)
   window.scrollTo({ top: savedScrollY });
-
   hideZoomNavigation();
 }
 
@@ -149,9 +134,8 @@ function createCard(cardNum) {
   const quality = manifest.revealed[cardNum]; // "high", "low", or undefined
   const isRevealed = quality === "high" || quality === "low";
 
-  if (!isRevealed && !showMissing) {
-    container.style.display = "none";
-  }
+  if (!isRevealed && !showMissing) container.style.display = "none";
+  if (!isRevealed) container.dataset.missing = "true";
 
   if (isRevealed) {
     revealedCards.push(container);
@@ -161,22 +145,16 @@ function createCard(cardNum) {
     img.src = path;
   } else {
     img.src = "LorcanaCardBack.png";
-    container.dataset.missing = "true";
   }
 
   img.addEventListener("click", (e) => {
     e.stopPropagation();
     const index = revealedCards.findIndex(c => c.contains(img));
-    if (index !== -1) {
-      zoomToCard(index);
-    }
+    if (index !== -1) zoomToCard(index);
   });
 
   return container;
 }
-
-
-
 
 function createBonusCard(bonusNum) {
   const filename = `bonus_${bonusNum}.png`;
@@ -195,22 +173,15 @@ function createBonusCard(bonusNum) {
   label.textContent = `Bonus ${bonusNum}`;
   container.appendChild(label);
 
-  img.onerror = () => {
-    container.remove(); // Remove if the image doesn't load
-  };
-
+  img.onerror = () => container.remove();
   img.addEventListener("click", (e) => {
     e.stopPropagation();
     const index = revealedCards.findIndex(c => c.contains(img));
-    if (index !== -1) {
-      zoomToCard(index);
-    }
+    if (index !== -1) zoomToCard(index);
   });
 
   return container;
 }
-
-
 
 function loadFromManifest() {
   grid.innerHTML = "";
@@ -218,7 +189,6 @@ function loadFromManifest() {
   loadingIndicator.classList.remove("hidden");
 
   const frag = document.createDocumentFragment();
-
   for (let i = 1; i <= totalCards; i++) {
     const cardNum = i.toString().padStart(3, "0");
     const container = createCard(cardNum);
@@ -229,17 +199,14 @@ function loadFromManifest() {
   loadingIndicator.classList.add("hidden");
 }
 
-
 function loadBonusCards() {
   bonusGrid.innerHTML = "";
-
   manifest.bonus.forEach(bonusNum => {
     const container = createBonusCard(bonusNum);
     bonusGrid.appendChild(container);
-    revealedCards.push(container); // include in zoom navigation
+    revealedCards.push(container); // Include in zoom nav
   });
 }
-
 
 function toggleMissing() {
   showMissing = !showMissing;
@@ -250,14 +217,13 @@ function toggleMissing() {
   });
 }
 
-toggleBtn.textContent = "Show Missing Card Slots";
 toggleBtn.addEventListener("click", toggleMissing);
+toggleBtn.textContent = "Show Missing Card Slots";
 
 prevBtn.addEventListener("click", e => {
   e.stopPropagation();
   zoomToCard(currentZoomIndex - 1);
 });
-
 nextBtn.addEventListener("click", e => {
   e.stopPropagation();
   zoomToCard(currentZoomIndex + 1);
@@ -265,27 +231,21 @@ nextBtn.addEventListener("click", e => {
 
 document.addEventListener("keydown", e => {
   if (!zoomedClone) return;
-  if (e.key === "ArrowLeft") {
-    zoomToCard(currentZoomIndex - 1);
-  } else if (e.key === "ArrowRight") {
-    zoomToCard(currentZoomIndex + 1);
-  } else if (e.key === "Escape") {
-    closeZoom();
-  }
+  if (e.key === "ArrowLeft") zoomToCard(currentZoomIndex - 1);
+  else if (e.key === "ArrowRight") zoomToCard(currentZoomIndex + 1);
+  else if (e.key === "Escape") closeZoom();
 });
 
-document.addEventListener("click", (e) => {
-  if (zoomedClone && !zoomedClone.contains(e.target)) {
-    closeZoom();
-  }
+document.addEventListener("click", e => {
+  if (zoomedClone && !zoomedClone.contains(e.target)) closeZoom();
 });
 
-
+// Fetch and initialize
 fetch("cards/Set_8/manifest.json")
   .then(res => res.json())
   .then(data => {
     manifest = data;
     loadFromManifest();
     loadBonusCards();
-    toggleBtn.click();
+    toggleBtn.click(); // default to hiding missing
   });
