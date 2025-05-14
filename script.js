@@ -12,13 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const grid = document.getElementById("cardGrid");
   const bonusGrid = document.getElementById("bonusGrid");
-  const toggleBtn = document.getElementById("toggleRevealed");
   const loadingIndicator = document.getElementById("loading");
   const overlay = document.getElementById("overlay");
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
 
-  let showMissing = false;
   let zoomedClone = null;
   let cacheBuster = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
   let manifest = { revealed: {}, bonus: [] };
@@ -35,18 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const CHUNK_SIZE = 20;
   let currentChunkIndex = 0;
   let isLoadingChunk = false;
-
-  const refreshBtn = document.createElement("button");
-  refreshBtn.textContent = "Refresh Card Images";
-  refreshBtn.id = "refreshImagesBtn";
-  refreshBtn.title = "Force all card images to reload in case any were updated";
-  refreshBtn.style.cssText = "background-color:#771517;color:#fff;border:2px solid #d3ba84;padding:0.5rem 1rem;margin:1rem auto;display:block;border-radius:8px;cursor:pointer;";
-  refreshBtn.addEventListener("click", () => {
-    cacheBuster = Date.now();
-    loadFromManifest();
-    loadBonusCards();
-  });
-  document.querySelector("main").insertBefore(refreshBtn, grid);
 
   function preventTouchScroll(e) { e.preventDefault(); }
   let touchStartX = 0;
@@ -153,9 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const quality = manifest.revealed[cardNum];
     const isRevealed = quality === "high" || quality === "low";
-
-    if (!isRevealed && !showMissing) container.style.display = "none";
-    if (!isRevealed) container.dataset.missing = "true";
 
     if (isRevealed) {
       mainRevealedCards.push({ id: cardNum, container });
@@ -295,18 +278,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function toggleMissing() {
-    showMissing = !showMissing;
-    toggleBtn.textContent = showMissing ? "Hide Missing Card Slots" : "Show Missing Card Slots";
-    document.querySelectorAll(".card-container").forEach(container => {
-      const isMissing = container.dataset.missing === "true";
-      container.style.display = (!showMissing && isMissing) ? "none" : "flex";
-    });
-  }
-
-  toggleBtn.addEventListener("click", toggleMissing);
-  toggleBtn.textContent = "Show Missing Card Slots";
-
   prevBtn.addEventListener("click", e => {
     e.stopPropagation();
     zoomToCard(currentZoomIndex - 1);
@@ -334,6 +305,5 @@ document.addEventListener("DOMContentLoaded", () => {
       manifest = data;
       loadFromManifest();
       loadBonusCards();
-      toggleBtn.click();
     });
 });

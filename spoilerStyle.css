@@ -206,26 +206,6 @@ body.no-scroll {
   text-align: center;
 }
 
-/* === BUTTONS === */
-#toggleRevealed,
-#refreshImagesBtn {
-  background-color: #771517;
-  color: #fff;
-  border: 2px solid #d3ba84;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  margin: 1rem auto;
-  display: block;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-#toggleRevealed:hover,
-#refreshImagesBtn:hover {
-  background-color: #a01c1c;
-}
-
 /* === ZOOM CONTROLS === */
 .zoom-controls {
   display: none;
