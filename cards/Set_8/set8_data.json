@@ -1,0 +1,2246 @@
+[
+  {
+    "number": "001",
+    "name": "Louie - One Cool Duck",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "002",
+    "name": "Dewey - Lovable Showoff",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "003",
+    "name": "Huey - Reliable Leader",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": false,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "004",
+    "name": "Goofy - Groundbreaking Chef",
+    "type": "character",
+    "rarity": "legendary",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "005",
+    "name": "Antonio Madrigal - Friend to All",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amber", "amethyst"
+    ]
+  },
+  {
+    "number": "006",
+    "name": "Minnie Mouse - Daring Defender",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amber", "ruby"
+    ]
+  },
+  {
+    "number": "007",
+    "name": "Ludwig Von Drake - All-Around Expert",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 2,
+    "inkwell": false,
+    "inks": [
+      "amber", "sapphire"
+    ]
+  },
+  {
+    "number": "008",
+    "name": "Charlotte La Bouff - Mardi Gras Princess",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "009",
+    "name": "Tiana - Natural Talent",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 4,
+    "inkwell": false,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "010",
+    "name": "Mirabel Madrigal - Curious Child",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "011",
+    "name": "Lady - Family Dog",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "012",
+    "name": "Jim Dear - Beloved Husband",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "013",
+    "name": "Gene - Niceland Resident",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "014",
+    "name": "Perdita - On the Lookout",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "015",
+    "name": "Rhino - One-Sixteenth Wolf",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "016",
+    "name": "Darling Dear - Beloved Wife",
+    "type": "character",
+    "rarity": "common",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "017",
+    "name": "The Colonel - Old Sheepdog",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "018",
+    "name": "Chief Bogo - Commanding Officer",
+    "type": "character",
+    "rarity": "legendary",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "019",
+    "name": "Pua - Protective Pig",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amber", "amethyst"
+    ]
+  },
+  {
+    "number": "020",
+    "name": "Bruno Madrigal - Singing Seer",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 7,
+    "inkwell": false,
+    "inks": [
+      "amber", "amethyst"
+    ]
+  },
+  {
+    "number": "021",
+    "name": "Kaa - Hypnotizing Python",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 4,
+    "inkwell": false,
+    "inks": [
+      "amber", "emerald"
+    ]
+  },
+  {
+    "number": "022",
+    "name": "Tramp - Dapper Rascal",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "amber", "emerald"
+    ]
+  },
+  {
+    "number": "023",
+    "name": "King Candy - Sugar Rush Nightmare",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amber", "ruby"
+    ]
+  },
+  {
+    "number": "024",
+    "name": "Wreck-It Ralph - Big Lug",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 7,
+    "inkwell": false,
+    "inks": [
+      "amber", "ruby"
+    ]
+  },
+  {
+    "number": "025",
+    "name": "Patch - Playful Pup",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 1,
+    "inkwell": false,
+    "inks": [
+      "amber", "sapphire"
+    ]
+  },
+  {
+    "number": "026",
+    "name": "Rolly - Chubby Puppy",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amber", "sapphire"
+    ]
+  },
+  {
+    "number": "027",
+    "name": "Perdita - Determined Mother",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "amber", "sapphire"
+    ]
+  },
+  {
+    "number": "028",
+    "name": "Pluto - Tried and True",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "amber", "steel"
+    ]
+  },
+  {
+    "number": "029",
+    "name": "Bolt - Down but Not Out",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amber", "steel"
+    ]
+  },
+  {
+    "number": "030",
+    "name": "Rhino - Power Hamster",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amber", "steel"
+    ]
+  },
+  {
+    "number": "031",
+    "name": "Antonio's Jaguar - Faithful Companion",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "032",
+    "name": "Calhoun - Hard-Nosed Leader",
+    "type": "character",
+    "rarity": "common",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "033",
+    "name": "Lady - Decisive Dog",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "amber", "emerald"
+    ]
+  },
+  {
+    "number": "034",
+    "name": "Alma Madrigal - Accepting Grandmother",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "amber", "amethyst"
+    ]
+  },
+  {
+    "number": "035",
+    "name": "Clawhauser - Front Desk Officer",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "036",
+    "name": "Joey - Blue Pigeon",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "037",
+    "name": "Donald Duck - Coin Collector",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 8,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "038",
+    "name": "Dalmatian Puppy - Tail Wagger",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "039",
+    "name": "Candy Drift",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "amber", "ruby"
+    ]
+  },
+  {
+    "number": "040",
+    "name": "She's Your Person",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "amber", "steel"
+    ]
+  },
+  {
+    "number": "041",
+    "name": "Only So Much Room",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amber", "emerald"
+    ]
+  },
+  {
+    "number": "042",
+    "name": "It Means No Worries",
+    "type": "song",
+    "rarity": "rare",
+    "ink": 9,
+    "inkwell": false,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "043",
+    "name": "Trials and Tribulations",
+    "type": "song",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "044",
+    "name": "The Nephew's Piggy Bank",
+    "type": "item",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": false,
+    "inks": [
+      "amber"
+    ]
+  },
+  {
+    "number": "045",
+    "name": "Palace Guard - Spectral Sentry",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "046",
+    "name": "Druun - Ravenous Plague",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "047",
+    "name": "Madame Medusa - Deceiving Partner",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amethyst", "ruby"
+    ]
+  },
+  {
+    "number": "048",
+    "name": "Hades - Ruthless Tyrant",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 7,
+    "inkwell": false,
+    "inks": [
+      "amethyst", "ruby"
+    ]
+  },
+  {
+    "number": "049",
+    "name": "Lena Sabrewing - Pure Energy",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amethyst", "steel"
+    ]
+  },
+  {
+    "number": "050",
+    "name": "Abu - Illusory Pachyderm",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "amethyst", "steel"
+    ]
+  },
+  {
+    "number": "051",
+    "name": "Bruno Madrigal - Single-Minded",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "052",
+    "name": "Royal Guard - Octopus Soldier",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "053",
+    "name": "Kuzco - Bored Royal",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "054",
+    "name": "Megara - Part of the Plan",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "055",
+    "name": "Yelana - Northuldra Leader",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "056",
+    "name": "Ryder - Fleet-Footed Infiltrator",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "057",
+    "name": "Bambi - Prince of the Forest",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "058",
+    "name": "Poe De Spell - Magica's Brother",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "059",
+    "name": "Madam Mim - Up to No Good",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "060",
+    "name": "Elsa - Fierce Protector",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "061",
+    "name": "Pinocchio - Strings Attached",
+    "type": "character",
+    "rarity": "legendary",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "062",
+    "name": "Jiminy Cricket - Conscientious and Wise",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "063",
+    "name": "Bambi - Little Prince",
+    "type": "character",
+    "rarity": "legendary",
+    "ink": 3,
+    "inkwell": false,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "064",
+    "name": "Monstro - Infamous Whale",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 8,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "065",
+    "name": "Nero - Fearsome Crocodile",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": false,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "066",
+    "name": "Magica De Spell - In Shadow Form",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 5,
+    "inkwell": false,
+    "inks": [
+      "amethyst", "emerald"
+    ]
+  },
+  {
+    "number": "067",
+    "name": "Kuzco - Impulsive Llama",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 7,
+    "inkwell": true,
+    "inks": [
+      "amethyst", "emerald"
+    ]
+  },
+  {
+    "number": "068",
+    "name": "Yzma - On Edge",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 6,
+    "inkwell": false,
+    "inks": [
+      "amethyst", "emerald"
+    ]
+  },
+  {
+    "number": "069",
+    "name": "Madam Mim - Rhino",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 6,
+    "inkwell": false,
+    "inks": [
+      "amethyst", "ruby"
+    ]
+  },
+  {
+    "number": "070",
+    "name": "Mother Gothel - Knows What's Best",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 2,
+    "inkwell": false,
+    "inks": [
+      "amethyst", "ruby"
+    ]
+  },
+  {
+    "number": "071",
+    "name": "Blue Fairy - Guiding Light",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "amethyst", "sapphire"
+    ]
+  },
+  {
+    "number": "072",
+    "name": "Anna - Magical Mission",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "amethyst", "sapphire"
+    ]
+  },
+  {
+    "number": "073",
+    "name": "The Sultan - Royal Apparition",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 5,
+    "inkwell": false,
+    "inks": [
+      "amethyst", "steel"
+    ]
+  },
+  {
+    "number": "074",
+    "name": "Jafar - High Sultan of Lorcana",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 5,
+    "inkwell": false,
+    "inks": [
+      "amethyst", "steel"
+    ]
+  },
+  {
+    "number": "075",
+    "name": "Camilo Madrigal - Center Stage",
+    "type": "character",
+    "rarity": "common",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "076",
+    "name": "Flower - Shy Skunk",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "077",
+    "name": "Forest Duel",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "078",
+    "name": "They Never Come Back",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "079",
+    "name": "Fantastical and Magical",
+    "type": "song",
+    "rarity": "rare",
+    "ink": 9,
+    "inkwell": false,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "080",
+    "name": "Pull the Lever!",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amethyst", "emerald"
+    ]
+  },
+  {
+    "number": "081",
+    "name": "Into the Unknown",
+    "type": "song",
+    "rarity": "super rare",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "amethyst", "sapphire"
+    ]
+  },
+  {
+    "number": "082",
+    "name": "Everybody's Got A Weakness",
+    "type": "action",
+    "rarity": "rare",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "083",
+    "name": "Scarab",
+    "type": "item",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": false,
+    "inks": [
+      "amethyst"
+    ]
+  },
+  {
+    "number": "084",
+    "name": "Ice Spikes",
+    "type": "item",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "amethyst", "sapphire"
+    ]
+  },
+  {
+    "number": "085",
+    "name": "Wilhelmina Packard - The Radio Operator",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "086",
+    "name": "Basil - Undercover Detective",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 7,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "087",
+    "name": "Tramp - Observant Guardian",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "088",
+    "name": "Chaca - Junior Chipmunk",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "089",
+    "name": "Tipo - Junior Chipmunk",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "090",
+    "name": "Bill the Lizard - Chimney Sweep",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "091",
+    "name": "March Hare - Hare-Brained Eccentric",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "092",
+    "name": "Fred - Major Science Enthusiast",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "093",
+    "name": "Mad Dog - Karnage's First Mate",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "094",
+    "name": "Dale - Bumbler",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "095",
+    "name": "Louis - Endearing Alligator",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "096",
+    "name": "Napoleon - Clever Bloodhound",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "097",
+    "name": "Chip - Quick Thinker",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "098",
+    "name": "Fred - Huge",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 7,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "099",
+    "name": "Gadget Hackwrench - Quirky Scientist",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "100",
+    "name": "Raya - Infiltration Expert",
+    "type": "character",
+    "rarity": "legendary",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "101",
+    "name": "Rapunzel - High Climber",
+    "type": "character",
+    "rarity": "legendary",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "102",
+    "name": "Flynn Rider - Breaking and Entering",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 4,
+    "inkwell": false,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "103",
+    "name": "Dormouse - Easily Agitated",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "emerald", "ruby"
+    ]
+  },
+  {
+    "number": "104",
+    "name": "Alice - Clumsy as Can Be",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "emerald", "ruby"
+    ]
+  },
+  {
+    "number": "105",
+    "name": "Queen of Hearts - Haughty Monarch",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "emerald", "ruby"
+    ]
+  },
+  {
+    "number": "106",
+    "name": "Hiro Hamada - Intuitive Thinker",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "emerald", "sapphire"
+    ]
+  },
+  {
+    "number": "107",
+    "name": "Go Go Tomago - Cutting Edge",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 4,
+    "inkwell": false,
+    "inks": [
+      "emerald", "sapphire"
+    ]
+  },
+  {
+    "number": "108",
+    "name": "Don Karnage - Air Pirate Leader",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": false,
+    "inks": [
+      "emerald", "steel"
+    ]
+  },
+  {
+    "number": "109",
+    "name": "Captain Hook - The Pirate King",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "emerald", "steel"
+    ]
+  },
+  {
+    "number": "110",
+    "name": "Maui - Stubborn Trickster",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "emerald", "steel"
+    ]
+  },
+  {
+    "number": "111",
+    "name": "Honey Lemon - Costumed Catalyst",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "emerald", "sapphire"
+    ]
+  },
+  {
+    "number": "112",
+    "name": "Jock - Attentive Uncle",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "113",
+    "name": "Archimedes - Resourceful Owl",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "114",
+    "name": "He Who Steals and Runs Away",
+    "type": "action",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "115",
+    "name": "Stopped Chaos in its Tracks",
+    "type": "song",
+    "rarity": "uncommon",
+    "ink": 8,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "116",
+    "name": "Wrong Lever!",
+    "type": "action",
+    "rarity": "rare",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "117",
+    "name": "Undermine",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "emerald", "ruby"
+    ]
+  },
+  {
+    "number": "118",
+    "name": "Walk the Plank!",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": false,
+    "inks": [
+      "emerald", "steel"
+    ]
+  },
+  {
+    "number": "119",
+    "name": "Chem Purse",
+    "type": "item",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "emerald"
+    ]
+  },
+  {
+    "number": "120",
+    "name": "Jeweled Collar",
+    "type": "item",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "emerald", "sapphire"
+    ]
+  },
+  {
+    "number": "121",
+    "name": "Gloyd Orangeboar - Fierce Competitor",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "122",
+    "name": "Honest John - Shameless Fraud",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "123",
+    "name": "Gyro Gearloose - Eccentric Inventor",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "ruby", "sapphire"
+    ]
+  },
+  {
+    "number": "124",
+    "name": "Vanellope Von Schweetz - Spunky Speedster",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "125",
+    "name": "Brutus - Fearsome Crocodile",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "126",
+    "name": "The Dodo - Outlandish Storyteller",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "127",
+    "name": "Alice - Courageous Keyholder",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "128",
+    "name": "Lumiere - Nimble Candelabra",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "129",
+    "name": "Gaston - Arrogant Showoff",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "130",
+    "name": "Mushu - Fast-Talking Dragon",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "131",
+    "name": "Cri-Kee - Part of the Team",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "132",
+    "name": "Lafayette - Sleepy Basset Hound",
+    "type": "character",
+    "rarity": "common",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "133",
+    "name": "Figaro - Tuxedo Cat",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "134",
+    "name": "Thumper - Young Bunny",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "135",
+    "name": "Wreck-It Ralph - Back Seat Driver",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "136",
+    "name": "Tinker Bell - Insistent Fairy",
+    "type": "character",
+    "rarity": "legendary",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "137",
+    "name": "Lilo - Causing an Uproar",
+    "type": "character",
+    "rarity": "legendary",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "138",
+    "name": "LeFou - Cake Thief",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "ruby", "sapphire"
+    ]
+  },
+  {
+    "number": "139",
+    "name": "Lumiere - Fired Up",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "ruby", "sapphire"
+    ]
+  },
+  {
+    "number": "140",
+    "name": "The Coachman - Greedy Deceiver",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "ruby", "steel"
+    ]
+  },
+  {
+    "number": "141",
+    "name": "Mulan - Charging Ahead",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 4,
+    "inkwell": false,
+    "inks": [
+      "ruby", "steel"
+    ]
+  },
+  {
+    "number": "142",
+    "name": "Mushu - Your Worst Nightmare",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "ruby", "steel"
+    ]
+  },
+  {
+    "number": "143",
+    "name": "Mr. Snoops - Betrayed Partner",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "144",
+    "name": "Friend Owl - Cantankerous Neighbor",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "145",
+    "name": "Faline - Playful Fawn",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 4,
+    "inkwell": false,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "146",
+    "name": "Prince John  - Fraidy-Cat",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 3,
+    "inkwell": false,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "147",
+    "name": "Nothing We Won't Do",
+    "type": "song",
+    "rarity": "rare",
+    "ink": 8,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "148",
+    "name": "Get Out!",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 6,
+    "inkwell": false,
+    "inks": [
+      "ruby", "sapphire"
+    ]
+  },
+  {
+    "number": "149",
+    "name": "Light the Fuse",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 1,
+    "inkwell": false,
+    "inks": [
+      "ruby", "steel"
+    ]
+  },
+  {
+    "number": "150",
+    "name": "Twitterpated",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "151",
+    "name": "Most Everyone's Mad Here",
+    "type": "action",
+    "rarity": "rare",
+    "ink": 7,
+    "inkwell": false,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "152",
+    "name": "The Sword of Shan Yu",
+    "type": "item",
+    "rarity": "rare",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "ruby"
+    ]
+  },
+  {
+    "number": "153",
+    "name": "The Mouse Queen - Ruler of Mousedom",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "154",
+    "name": "Sir Pellinore - Seasoned Knight",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "155",
+    "name": "Anita Radcliffe - Dog Lover",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "156",
+    "name": "Olaf - Recapping the Story",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "157",
+    "name": "Anna - Trusting Sister",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "158",
+    "name": "Wasabi - Always Prepared",
+    "type": "character",
+    "rarity": "common",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "159",
+    "name": "Go Go Tomago - Mechanical Engineer",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "160",
+    "name": "The Wardrobe - Perceptive Friend",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "161",
+    "name": "Mrs.Potts - Head Housekeeper",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "162",
+    "name": "Jasmine - Resourceful Infiltrator",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "163",
+    "name": "Little Sister - Responsible Rabbit",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "164",
+    "name": "Adelaide Bonfamille - Patron of the Arts",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "165",
+    "name": "Nani - Heist Mastermind",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "166",
+    "name": "Stitch - Experiment 626",
+    "type": "character",
+    "rarity": "legendary",
+    "ink": 3,
+    "inkwell": false,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "167",
+    "name": "Ratigan - Greedy Genius",
+    "type": "character",
+    "rarity": "legendary",
+    "ink": 8,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "168",
+    "name": "Arthur - Determined Squire",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "sapphire", "steel"
+    ]
+  },
+  {
+    "number": "169",
+    "name": "Bernard - Over-Prepared",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": false,
+    "inks": [
+      "sapphire", "steel"
+    ]
+  },
+  {
+    "number": "170",
+    "name": "Aladdin - Vigilant Guard",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "sapphire", "steel"
+    ]
+  },
+  {
+    "number": "171",
+    "name": "Jasmine - Steady Strategist",
+    "type": "character",
+    "rarity": "super rare",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "sapphire", "steel"
+    ]
+  },
+  {
+    "number": "172",
+    "name": "Roquefort - Lock Expert",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "173",
+    "name": "Jumba Jookiba - Critical Scientist",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "174",
+    "name": "Geppetto - Experienced Craftsman",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "175",
+    "name": "Heads Held High",
+    "type": "song",
+    "rarity": "rare",
+    "ink": 6,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "176",
+    "name": "Pouncing Practice",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "177",
+    "name": "Down in New Orleans",
+    "type": "song",
+    "rarity": "super rare",
+    "ink": 6,
+    "inkwell": false,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "178",
+    "name": "Television Set",
+    "type": "item",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "179",
+    "name": "Belle's Favorite Book",
+    "type": "item",
+    "rarity": "rare",
+    "ink": 3,
+    "inkwell": false,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "180",
+    "name": "Atlantean Crystal",
+    "type": "item",
+    "rarity": "rare",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "sapphire"
+    ]
+  },
+  {
+    "number": "181",
+    "name": "Atitaya - Fang General",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 7,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "182",
+    "name": "Bobby - Purple Pigeon",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "183",
+    "name": "Magic Carpet - Phantom Rug",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "184",
+    "name": "Prince Achmed - Rival Suitor",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "185",
+    "name": "Dumptruck - Karnage's Second Mate",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": false,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "186",
+    "name": "Captain Hook - Forceful Duelist",
+    "type": "character",
+    "rarity": "common",
+    "ink": 1,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "187",
+    "name": "General Li - Head of the Imperial Army",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "188",
+    "name": "Monterey Jack - Defiant Protector",
+    "type": "character",
+    "rarity": "common",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "189",
+    "name": "Genie - Satisfied Dragon",
+    "type": "character",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "190",
+    "name": "Toby Turtle - Wary Friend",
+    "type": "character",
+    "rarity": "common",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "191",
+    "name": "Arianna - Queen of Corona",
+    "type": "character",
+    "rarity": "common",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "192",
+    "name": "Zipper - Flying Ranger",
+    "type": "character",
+    "rarity": "uncommon",
+    "ink": 3,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "193",
+    "name": "Khan - War Horse",
+    "type": "character",
+    "rarity": "common",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "194",
+    "name": "Vinnie - Green Pigeon",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 3,
+    "inkwell": false,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "195",
+    "name": "Iago - Out of Reach",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "196",
+    "name": "Nathaniel Flint - Notorious Pirate",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 2,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "197",
+    "name": "Vincenzo Santorini - The Explosives Expert",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 7,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "198",
+    "name": "Namaari - Single-Minded Rival",
+    "type": "character",
+    "rarity": "legendary",
+    "ink": 5,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "199",
+    "name": "Mickey Mouse - Giant Mouse",
+    "type": "character",
+    "rarity": "legendary",
+    "ink": 10,
+    "inkwell": false,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "200",
+    "name": "Stitch - Alien Troublemaker",
+    "type": "character",
+    "rarity": "rare",
+    "ink": 4,
+    "inkwell": true,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "201",
+    "name": "Dsperate Plan",
+    "type": "action",
+    "rarity": "rare",
+    "ink": 3,
+    "inkwell": false,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "202",
+    "name": "Beyond the Horizon",
+    "type": "song",
+    "rarity": "uncommon",
+    "ink": 7,
+    "inkwell": false,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "203",
+    "name": "Quick Shot",
+    "type": "action",
+    "rarity": "uncommon",
+    "ink": 2,
+    "inkwell": false,
+    "inks": [
+      "steel"
+    ]
+  },
+  {
+    "number": "204",
+    "name": "Hamster Ball",
+    "type": "item",
+    "rarity": "common",
+    "ink": 3,
+    "inkwell": false,
+    "inks": [
+      "steel"
+    ]
+  }
+]

@@ -240,6 +240,7 @@ body.show-controls .zoom-controls {
 
 /* === DESKTOP ZOOM POSITION === */
 @media (min-width: 1025px) {
+
   #prevBtn,
   #nextBtn {
     position: fixed;
@@ -256,6 +257,7 @@ body.show-controls .zoom-controls {
 
 /* === MOBILE OVERRIDES === */
 @media (max-width: 1024px) {
+
   .card-grid,
   #bonusGrid {
     grid-template-columns: repeat(2, 1fr);
