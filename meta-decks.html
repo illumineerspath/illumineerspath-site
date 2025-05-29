@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meta Decks</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="background-wrapper">
+        <div class="background-image-layer"></div>
+        <div class="twinkle-overlay" id="twinkleOverlay"></div>
+
+        <header class="navbar">
+            <h1>
+                <a href="index.html">
+                    <img src="Icon.png" alt="Site Icon" class="site-logo">
+                    <img src="Header1_alt.png" alt="Illumineers Path Logo" class="site-logo">
+                </a>
+            </h1>
+            <button class="nav-toggle" id="navToggle">&#9776;</button>
+            <nav>
+                <a href="meta-decks.html">Meta Decks</a>
+                <a href="budget-decks.html">Budget Decks</a>
+                <a href="deckbuilding.html">Deckbuilding</a>
+                <a href="about.html">About</a>
+                <a href="spoilers.html">Spoilers</a>
+                <a href="rotation.html">Rotation</a>
+            </nav>
+        </header>
+
+        <main class="article-wrapper">
+            <article class="article-card">
+                <h2>Meta Decks - The most powerful (and most common) decks of the format</h2>
+                <p>The term "metagame" refers to the strategies, knowledge, and practices that exist alongside the
+                    exisiting rules of the game and influence the strategies and decisions being made. Understanding the
+                    "meta" of your local tournament means you have a good idea of what <a href="deckbuilding.html">types
+                        of decks</a> people like to
+                    play and the strategies you need to prepare against if you want to do well.</p>
+                <p>For example, if you know that half the people attending are likely going to play early singers like
+                    <strong>Cinderella - Ballroom Sensation</strong> with <strong>Let the Storm Rage On</strong> to
+                    damage your characters, that is
+                    probably not a good tournament for you to try an aggro deck with lots of cheap weak willpower
+                    characters. Knowing that so many people will have lots of songs in their decks means decks that
+                    include <strong>Ursula - Deceiver</strong> could be very successful though.
+                </p>
+
+                <img class="LorcanaCard" src="cards/Set_2/003.png">
+                <img class="LorcanaCard" src="cards/Set_2/199.png">
+                <img class="LorcanaCard" src="cards/Set_3/090.png">
+                <p>The better you understand your meta the easier it will be for you to prepare a successful deck. What
+                    deck you decide to play is extremely important, as there are some decks that will have extremely
+                    one-sided matchups against certain decks that "counter" them. Often the top meta decks played by
+                    professionals are built with the mentality of trying to "go even" or better into as many other decks
+                    as possible.</p>
+                <p>
+                    This idea of trying to go even into everything is because a lot of professional players would rather
+                    play a deck that has a 50% chance of winning against any deck than play a deck that has a 90% chance
+                    to beat one strategy but only a 20% chance of winning against another, unless they are
+                    <i>extremely</i>
+                    confident that hardly anyone is playing the deck
+                    that will almost always beat them. With 50/50 odds of winning the victor is decided more by skill
+                    and good decision-making rather than winning or losing in deck choice.
+                </p>
+                <p>Once you have your 50/50 odds deck you can add in "tech cards", cards that specifically improve
+                    certain matchups, to try and get
+                    a better chance against the decks you expect to be most common without lowering your odds too much
+                    against everything else.</p>
+                <div class="image-commentary">
+                    <img class="LorcanaCard" src="cards/Set_2/174.png">
+                    <div class="comment-text">
+                        <h2>Tech Cards</h2>
+                        <p><a href="https://dreamborn.ink/cards/benja/guardian-of-the-dragon-gem"><strong>Benja
+                                    - Guardian of the Dragon Gem</strong></a> is a great tech card if you know you will
+                            be playing against a lot of item decks. Part of why he is such a good option though
+                            is because he does more than just banishing an item. As a character he is still able to
+                            quest and challenge even if they don't have an item to banish,
+                            and he is inkable so you don't have to worry about it ever being stuck in your hand with no
+                            use.</p>
+                    </div>
+                </div>
+                <h3>What are the meta decks for Reign of Jafar?</h3>
+                <p>The short answer is - we don't know yet. The set has just come out, but a safe bet will be that many
+                    of the <a href="https://inkdecks.com/lorcana-metagame">previous top decks</a> stay strong while a
+                    few new ones rise up to see success as well. Given the
+                    current excitement around certain cards on the internet some early decks to watch out for would be
+                    <a href="https://dreamborn.ink/decks/BEEZhIvFPBwjRhff3eA1">Amber/Steel Steelsong</a>, <a
+                        href="https://dreamborn.ink/decks/f12hg9ZBLUEOig0FrthD">Amber/Emerald Chernadogs</a>, and some
+                    new varient of
+                    <a href="https://inkdecks.com/lorcana-metagame/deck-dinh-a-little-lore-474642">Ruby/Sapphire Shark
+                        Control</a>.
+                </p>
+                <h4>Last updated May 29, 2025</h4>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2025 IllumineersPath.com</p>
+            <p>This website uses trademarks and/or copyrights associated with Disney Lorcana TCG, used under
+                <a href="https://cdn.ravensburger.com/lorcana/community-code-en">Ravensburger’s Community Code
+                    Policy</a>. This website is not published, endorsed, or specifically approved
+                by Disney or Ravensburger.<br> For more information about Disney Lorcana TCG, visit <a
+                    href="https://www.disneylorcana.com/">https://www.disneylorcana.com/.</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggle = document.getElementById("navToggle");
+            const nav = document.querySelector(".navbar nav");
+            const body = document.body;
+
+            toggle.addEventListener("click", () => {
+                nav.classList.toggle("show");
+                body.classList.toggle("no-scroll");
+            });
+
+            const scrollBtn = document.getElementById("scrollBtn");
+            if (scrollBtn) {
+                scrollBtn.addEventListener("click", () => {
+                    document.querySelector(".card-grid").scrollIntoView({ behavior: "smooth" });
+                });
+            }
+
+            const cardGrid = document.querySelector(".card-grid");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        cardGrid.classList.add("visible");
+                        observer.unobserve(cardGrid);
+                    }
+                });
+            }, { threshold: 0.6 });
+
+            if (cardGrid) observer.observe(cardGrid);
+
+            const overlay = document.getElementById('twinkleOverlay');
+            const count = 120;
+
+            for (let i = 0; i < count; i++) {
+                const twinkle = document.createElement('div');
+                twinkle.classList.add('twinkle');
+                if (Math.random() < 0.4) twinkle.classList.add('gold');
+                if (Math.random() < 0.3) twinkle.classList.add('pulse');
+                if (Math.random() < 0.2) twinkle.classList.add('orbit');
+
+                const favorTopRight = Math.random() < 0.6;
+                if (favorTopRight) {
+                    twinkle.style.top = `${Math.random() * 40}%`;
+                    twinkle.style.left = `${60 + Math.random() * 40}%`;
+                } else {
+                    twinkle.style.top = `${Math.random() * 100}%`;
+                    twinkle.style.left = `${Math.random() * 100}%`;
+                }
+
+                twinkle.style.animationDelay = `${Math.random() * 5}s`;
+                overlay.appendChild(twinkle);
+            }
+        });
+
+        function updateNavHeightCSSVar() {
+            const nav = document.querySelector('.navbar');
+            if (nav) {
+                const height = nav.offsetHeight;
+                document.documentElement.style.setProperty('--nav-height', `${height}px`);
+            }
+        }
+
+        window.addEventListener('load', updateNavHeightCSSVar);
+        window.addEventListener('resize', updateNavHeightCSSVar);
+    </script>
+</body>
+
+</html>
